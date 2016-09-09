@@ -1,16 +1,18 @@
 # Laen's Shift Register Demo v2
 
-This is a project to convert Laen's shift register demonstration design into KiCad.
+This is a project to convert Laen's shift register demonstration design into KiCad. The demo board provides eight output LEDs driven by an HC595 shift register with input press-buttons for data, clock, and latch.  
+
+Each press of the clock button queues up the status of the data button; press the latch button to show the outputs. Reset everything by pressing the master reset button followed by the latch button.
 
 <img src="assembled.png">
 
 <img src="oshpreview.png">
 
+The boards can be chained together by the connectors at each end. 
+
 <img src="chained.png">
 
 I've <a href="https://oshpark.com/projects/dWEtqIvz">shared the boards at OSH Park</a>, where you can buy a set of three for $28.85.
-
-Here are all of the parts: 
 
 |Ref|Qty|Description|MF_Name|MF_PN|Digikey PN|
 |---|---|-----------|-------|-----|----------|
@@ -27,4 +29,4 @@ Here are all of the parts:
 |U1|1|IC REG LDO 5V 1A NCP7805 TO220AB|ON Semi|NCP7805TG|NCP7805TGOS-ND|
 |U2|1|IC 8-BIT SHIFT REGISTER 16-DIP|TI|SN74HC595N|296-1600-5-ND|
 
-
+<img src="schematic.png">
